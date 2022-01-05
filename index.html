@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>myblog</title>
+
+  <!-- MDB icon -->
+  <!-- <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" /> -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- link footer -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+</head>
+
+
+<body>
+  <!-- navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark shadow-0"
+    style="color: white  ;background-color:  rgba(0, 0, 0, 0); z-index: 2; position: absolute;">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="#">
+          <i class="fas fa-home"> Prtmrzky</i>
+
+        </a>
+
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#materi">--<i class="far fa-lightbulb"></i>--</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#myprojects">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link page-scroll" href="#fyi"><i class="fas fa-info-circle">FYI</i></a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+
+
+      <!-- Collapsible wrapper -->
+
+      <!-- Right elements -->
+      <div class="d-flex align-items-center  ">
+        <!-- Icon -->
+        <a class="text-reset me-3" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+        </a>
+        <a class="text-reset me-3" href="#">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <!-- Avatar -->
+        <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuLink"
+          role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+          <img src="img/IMG_20211108_234912.jpg" class="rounded-circle" height="25" alt="" loading="lazy" />
+        </a>
+
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+          <li>
+            <a class="dropdown-item page-scroll" href="#profile">profile</a>
+          </li>
+          <li>
+            <a class="dropdown-item page-scroll" href="#mefooter">Credit</a>
+          </li>
+          <li>
+            <a class="dropdown-item page-scroll" href="#con">Conntact Me</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- end navbar -->
+
+
+  <!-- jumbotron -->
+  <section id="jumbotron" style=" z-index: 1;">
+    <div class="p-5 text-center bg-image " style="
+              background-image: url('img/jumbotron.jpg');
+              height: 800px;
+        
+              margin-top:0;
+              background-attachment: fixed;
+            ">
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="text-center" style="color: rgba(230, 230, 230, 0.96);">
+            <h1 class="mb-3"><i class="fas fa-smile-beam fa-4x"></i></i></h1>
+            <h4 class="mb-3">Apakah kamu sudah senyum hari ini?</h4>
+            <!-- <a class="btn btn-outline-light btn-lg" href="#profile" role="button"
+              >Click Me</a
+              > -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end jumbotron -->
+
+
+
+  <!-- profile -->
+  <section id="profile" class="jumbotron text-center"
+    style="padding-top: 5rem; min-height: 400px; padding-bottom: 100px; z-index: 3;">
+    <!-- <img  src="img/profil.png" alt="profil" width="200" class="rounded-circle" > -->
+    <div class="container-fluid">
+      <h2>Profile</h2>
+
+      <div class="row justify-content-center mt-3">
+        <div data-aos="zoom-out-right" class="col-8 justify-content-center" style="padding-top: 0%;">
+          <div class="card w-75" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Hi ,I'm Rizky</h5>
+              <p class="card-text">
+                aku adalah seorang siswa dari SMK N 2 Karanganyar dengan jurusan RPL, aku lahir pada 27 Desember 2003 .
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 ">
+          <img data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000" src="img/profilejmb.png"
+            width="350" class="rounded float-end img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end profile -->
+
+  <!-- materi -->
+  <section id="materi" style="min-height: 400px;">
+    <div class="container justify-content-center">
+      <h3><i class="far fa-lightbulb"></i></h3>
+      <div class="accordion accordion-flush" id="accordionFlushExample" style="max-width: 1000px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <i class="fas fa-photo-video"> Editing</i>
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingE1">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseE1" aria-expanded="false" aria-controls="flush-collapseE1">
+                    <i class="far fa-user-circle"> Artodipro</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseE1" class="accordion-collapse collapse" aria-labelledby="flush-headingE1"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="https://www.youtube.com/c/ArtodiPro"><i class="fab fa-youtube" style="color: red;"></i>
+                      youtube</a>
+                    <p>Ibrahim Jo adalah sosok dibalik channel youtube ini.
+                      channel ini berisi konten seputar teknik videografi,
+                      lighting, sampai video editing. Pembawaan konten yang singkat namun mudah untuk dipahami
+                      cocok banget buat kamu yang pengen coba coba belajar ngedit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingE2">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseE2" aria-expanded="false" aria-controls="flush-collapseE2">
+                    <i class="far fa-user-circle"> Pemuda Setempat</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseE2" class="accordion-collapse collapse" aria-labelledby="flush-headingE2"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="https://www.youtube.com/c/pemudasetempatid"><i class="fab fa-youtube"
+                        style="color: red;"></i> youtube</a>
+                    <p>Bernama asli Rifky Abbas,
+                      channel youtube satu juga menyajikan konten konten tutorial seputar video editing,
+                      di channel ini kalian bisa belajar tentang software editing
+                      video Premiere Pro & After Effect yang mudah dipahami.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingE3">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseE3" aria-expanded="false" aria-controls="flush-collapseE3">
+                    <i class="far fa-user-circle"> ANGR</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseE3" class="accordion-collapse collapse" aria-labelledby="flush-headingE3"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="https://www.youtube.com/c/ANGR75"><i class="fab fa-youtube" style="color: red;"></i>
+                      youtube</a>
+                    <p>ANGR merupakan channel Youtube yang dibentuk oleh dua orang asal
+                      Kalimantan Timur. Pada awalnya ANGR memilih gaming sebagai konten utamanya.
+                      Seirring berkembangnya channel, ANGR mencoba memberikan beragam konten baru seperti
+                      tutorial editing, tips and trick, sketsa, dan juga tech review.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <i class="fas fa-code"> Programing</i>
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingP1">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseP1" aria-expanded="false" aria-controls="flush-collapseP1">
+                    <i class="far fa-user-circle"> Shandika Galih</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseP1" class="accordion-collapse collapse" aria-labelledby="flush-headingP1"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="https://www.youtube.com/c/WebProgrammingUNPAS"><i class="fab fa-youtube"
+                        style="color: red;"></i> youtube</a>
+                    <p>Nama asli pemilik channel youtube web programming unpas : Sandhika Galih
+                      Web Programming UNPAS adalah Channel khusus yang membahas mengenai teknologi internet dan
+                      pengembangan web/web development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingP2">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseP2" aria-expanded="false" aria-controls="flush-collapseP2">
+                    <i class="far fa-user-circle">Petani Kode</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseP2" class="accordion-collapse collapse" aria-labelledby="flush-headingP2"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="https://www.petanikode.com/"> <i class="fas fa-desktop"
+                        style="color: rgb(103, 11, 252);"></i> website</a>
+                    <p> website ini sudah membantu banyak sekali para programer,
+                      Anda bisa belajar pemrograman dari awal disini, mulai dari bahasa pemrograman Java, C#, C++, PHP,
+                      HTML, android
+                      , bahkan belajar pemrograman pascal pun di bahas di website ini..</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingP3">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseP3" aria-expanded="false" aria-controls="flush-collapseP3">
+                    <i class="far fa-user-circle"> W3School</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseP3" class="accordion-collapse collapse" aria-labelledby="flush-headingP3"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href="https://www.w3schools.com/"> <i class="fas fa-desktop"
+                        style="color: rgb(103, 11, 252);"></i> website</a>
+                    <br>
+                    W3Schools merupakan website yang mempelajari tentang teknologi web online.
+                    yang berkaitan dengan HTML, CSS, JavaScript, JSON, PHP, AngularJS, SQL, Bootstrap, Node.js, jQuery,
+                    XQuery, AJAX, dan XML.
+                    Dengan menggunakan editor online, pembaca dapat mengedit contoh dan mengeksekusi kodenya di platform
+                    latihan.
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <i class="fas fa-hiking"> Nature Lovers</i>
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNL1">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseNL1" aria-expanded="false" aria-controls="flush-collapseNL1">
+                    <img src="img/fiersa.png" class="rounded-circle" height="25" loading="lazy" alt="">
+                    <i class="far" style="margin-left: 5px;">Fiersa Besari</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseNL1" class="accordion-collapse collapse" aria-labelledby="flush-headingNL1"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <a href=""><i class="fab fa-instagram" style="color: rgb(220, 23, 213);"></i> instagram</a>
+                    <br>
+                    ini tentang fiersa
+                    Januari 2020 ia memutuskan untuk rehat sejenak dari dunia
+                    panggung dan kembali mendekatkan diri dengan alam.
+                    Ia ingin keluar dari zona nyaman yang memanjakan diri sendiri,
+                    maka tercetuslah Ekspedisi Atap Negeri, dimana Bung Fiersa akan
+                    mendaki 33 gunung yang tersebar diseluruh provinsi di Indonesia,
+                    Januari 2020 ia memutuskan untuk rehat sejenak dari dunia panggung
+                    dan kembali mendekatkan diri dengan alam. Ia ingin keluar dari zona
+                    nyaman yang memanjakan diri sendiri, maka tercetuslah Ekspedisi Atap
+                    Negeri, dimana Bung Fiersa
+                    akan mendaki 33 gunung yang tersebar diseluruh provinsi di Indonesia,
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingNL2">
+                  <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#flush-collapseNL2" aria-expanded="false" aria-controls="flush-collapseNL2">
+                    <i class="far fa-user-circle"> Dzawin Nur</i>
+                  </button>
+                </h2>
+                <div id="flush-collapseNL2" class="accordion-collapse collapse" aria-labelledby="flush-headingNL2"
+                  data-mdb-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    ini tentang Dzawin
+                    Dzawin lebih banyak melanglang buana dari pelosok ke pelosok dan dari gunung ke gunung. Termasuk
+                    menemui secara langsung kisah dan
+                    keadaan di pelosok tentang toleransi, ekonomi, hingga adat istiadat.
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top: 50px; margin-bottom: 100px;">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title"><i class="fas fa-link"> Rules</i></h5>
+          <p class="card-text">
+          <ul>
+            <li>belajar hal baru</li>
+            <li>simpan progresmu</li>
+            <li>berdoa</li>
+            <li>jangan menyerah</li>
+          </ul>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end materi -->
+
+  <!-- something -->
+
+  <!-- end something -->
+
+  <!-- responsive -->
+  <section>
+
+  </section>
+  <!-- end rezponsive -->
+  <div style="margin-top: 100px;">
+    <hr style="width: 250px;
+  border-top: 3px solid #eaea;
+  margin: auto;
+  margin-bottom: 3px;">
+    <hr style="width: 350px;
+  border-top: 3px solid #eaea;
+  margin: auto;
+  margin-bottom: 3px;">
+    <hr style="width: 150px;
+  border-top: 3px solid #eaea;
+  margin: auto;
+  margin-bottom: 3px;
+  margin-bottom: 100px;
+  ">
+  </div>
+
+  <!-- Galeri -->
+  <section" id="myprojects">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h1 data-aos="zoom-in" style="color: hsl(0, 0%, 2%);">project</h1>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-sm-4 mb-3 ">
+          <div class="container1">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
+
+              <img src="img/slide 2.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  <i class="fas fa-image"> with photoshop & Pict Art</i>
+                  <span class="float-end">
+                    <i style="color: red;" class="fas fa-heart"></i>
+
+                  </span>
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3 ">
+          <div class="container1">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
+              <img src="img/slide 4.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  <i class="fas fa-image"> with photoshop & 3D LUT Creator</i>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 mb-3 ">
+          <div class="container1">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
+              <img src="img/slide 3.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  <i class="fas fa-image"> with photoshop & Pict Art</i>
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-sm-4 mb-3 ">
+          <div class="container1">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
+              <img src="img/slide 1.png" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  <i class="fas fa-image"> with photoshop</i>
+
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 mb-3">
+          <div class="container1">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
+              <video controls class="video card-img-top ">
+                <source src="vidio.mp4" type="video/mp4">
+              </video>
+              <div class="card-body">
+                <p class="card-text">
+                  <i class="fas fa-film"> With After Effect & Filmora</i>
+                  <span class="float-end">
+                    <i style="color: red;" class="fas fa-heart"></i>
+
+                  </span>
+                </p>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="container my-5" id="fyi">
+
+        <p> <i class="fas fa-info"> </i>
+          Anda dapat membagikan hasil edit Anda di situs web saya melalui email saya <a
+            href="pratamarizky249b@gmail.com"> pratamarizky249b@gmail.com</a> dan saya dapat menampilkannya di kolom
+          proyek beserta nama Anda...</p>
+
+      </div>
+    </div>
+
+
+
+    </section>
+    <!-- end Galeri  -->
+    <div id="disqus_thread"></div>
+
+
+
+
+
+
+    <!--Main Navigation-->
+
+
+
+
+    <!-- software -->
+    <section id="Software" style="padding-top: 150px; padding-bottom: 5rem;  ">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 style="color:  #13cc81;">Software</h2>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-10">
+            <div class="card mb-3" style="max-width: 800px;">
+              <div class="row">
+                <div class="col-4 ">
+                  <img src="img/phs.png" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title ">Adobe Photoshop</h5>
+                    <p class="card-text">Adobe Photoshop, atau biasa disebut Photoshop, adalah perangkat lunak editor
+                      citra buatan Adobe Systems yang dikhususkan untuk pengeditan foto/gambar dan pembuatan efek.</p>
+                    <a href="https://www.bagas31.info/2016/11/adobe-photoshop-cc-2017.html" class="btn"
+                      style="background-color:#13cc81; color: white;  ">Download</a>
+                    <p class="card-text" style="text-align: right; "><small class="text-muted">last modified at octo..
+                      </small></p>
+                  </div>
+                </div>
+              </div>
+
+              
+             
+            </div>
+
+          </div>
+          <div class="col-2">
+
+          </div>
+        </div>
+
+
+        <div class="row">
+
+          <div class="col-2">
+
+          </div>
+          <div class="col-10">
+            <div class="card mb-3 rounded float-end" style="max-width: 800px; ">
+              <div class="row ">
+                <div class="col-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Adobe After Effect</h5>
+                    <p class="card-text">Adobe After Effects adalah produk peranti lunak yang dikembangkan oleh Adobe,
+                      digunakan untuk film dan pos produksi pada video</p>
+                    <a href="https://www.bagas31.info/2019/09/adobe-after-effects-cc-2017-v14-2-1-full-version.html"
+                      class="btn" style="background-color:#13cc81; color: white; ">Download</a>
+                    <p class="card-text"><small class="text-muted">last modified at octo.. </small></p>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <img src="img/aes.png" class="img-fluid rounded-start" alt="...">
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- end software -->
+
+    <!-- contact -->
+
+    <section id="con" style="padding-top: 5rem; min-height: 600px;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>contact</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Terima kasih!</strong> pesan anda sudah saya terima.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="rzk-contact-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama lengkap</label>
+                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email </label>
+                <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Pesan</label>
+                <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-kirim"
+                style="background-color:#13cc81; color: white;">Submit</button>
+
+              <button class="btn btn-loading d-none" style="background-color:#13cc81; color: white;" type="button"
+                disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end contact -->
+
+
+    <!-- footer -->
+    <!-- Footer -->
+    <footer id="mefooter" class="text-center text-lg-start bg-dark text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Connect with me on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-telegram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-home"> Prtmrzky</i>
+              </h6>
+              <p>
+                This website was created just for education and inspiration for website developers, so please forgive
+                any mistakes. I accept criticism and suggestions.
+                <br>im rizky pratama Thanks
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Support by
+              </h6>
+              <p>
+                <i class="fab fa-html5"> html</i>
+              </p>
+              <p>
+                <i class="fab fa-bootstrap"> bootstrap</i>
+              </p>
+              <p>
+                <i class="fab fa-css3-alt"> css</i>
+              </p>
+              <p>
+                <i class="fab fa-js"> javascript</i>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i> Karanganyar, 57762</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                pratamarizky249b@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> +62 8821 4826 417</p>
+
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="">Rizkypratama</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!-- end footer -->
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+    </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+      $('.page-scroll').on('click', function () {
+
+
+        console.log('oke');
+      });
+
+      //paralax
+      $(window).scroll(function () {
+        var wScroll = $(this).scrollTop();
+
+        $('#jumbotron h1').css({
+          'transform': 'translate(0px, ' + wScroll / 1.3 + '%)'
+        });
+        $('#jumbotron h4').css({
+          'transform': 'translate(0px, ' + wScroll * 2 + '%)'
+        });
+
+
+        //paralax
+
+
+
+
+      });
+
+
+
+
+
+
+
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzlY7v5dhTtS7oNRFBkqmS4uE8idmEiu8x11P9W74ry7wmRK19tkM0GHs2iKYmmSuOI/exec'
+      const form = document.forms['rzk-contact-form'];
+
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+
+
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            myAlert.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response)
+
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+
+
+    </script>
+     <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://company-profile-4.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+
+</html>
